@@ -1,6 +1,5 @@
 cd C:\Program Files\Tableau\Tableau Server\2020.3\extras\Command Line Utility
 tabcmd.exe
-tabcmd version
 tabcmd login --no-proxy -s http://tableau-2020-3-production.datateam.jimdo-server.com -u jimdoadmin -p %TABCMD_JIMDO_ADMIN_PASS%
 
 ::Get New Sales Distribution
