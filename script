@@ -1,0 +1,77 @@
+cd C:\Program Files\Tableau\Tableau Server\2020.3\extras\Command Line Utility
+tabcmd.exe
+tabcmd version
+tabcmd login --no-proxy -s http://tableau-2020-3-production.datateam.jimdo-server.com -u jimdoadmin -p %TABCMD_JIMDO_ADMIN_PASS%
+
+::Get New Sales Distribution
+tabcmd export "NewSalesDistributionDashboard/NewSalesDistribution3?:iid=4" --png -f "G:\My Drive\Board reporting\Current_Screenshots\0-sales-dist.png"
+
+::Get NPP Screenshots
+tabcmd export "BoardReportingNPP/Outputsheet?Country=DE" --png -f "G:\My Drive\Board reporting\Current_Screenshots\1a-NPP-DE.png"
+tabcmd export "BoardReportingNPP/Outputsheet?Country=CH" --png -f "G:\My Drive\Board reporting\Current_Screenshots\2a-NPP-CH.png"
+tabcmd export "BoardReportingNPP/Outputsheet?Country=NL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\3a-NPP-NL.png"
+tabcmd export "BoardReportingNPP/Outputsheet?Country=ALL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\4a-NPP-Global.png"
+tabcmd export "BoardReportingNPP/Outputsheet?Country=AT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\5a-NPP-AT.png"
+tabcmd export "BoardReportingNPP/Outputsheet?Country=JP" --png -f "G:\My Drive\Board reporting\Current_Screenshots\6a-NPP-JP.png"
+tabcmd export "BoardReportingNPP/Outputsheet?Country=AU" --png -f "G:\My Drive\Board reporting\Current_Screenshots\7a-NPP-AU.png"
+tabcmd export "BoardReportingNPP/Outputsheet?Country=IT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\8a-NPP-IT.png"
+
+::Get ABPUC Screenshots
+tabcmd export "BoardReportingFunnel/ABPUC?region=DE" --png -f "G:\My Drive\Board reporting\Current_Screenshots\1b-ABPUC-DE.png"
+tabcmd export "BoardReportingFunnel/ABPUC?region=CH" --png -f "G:\My Drive\Board reporting\Current_Screenshots\2b-ABPUC-CH.png"
+tabcmd export "BoardReportingFunnel/ABPUC?region=NL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\3b-ABPUC-NL.png"
+tabcmd export "BoardReportingFunnel/ABPUC?region=ALL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\4b-ABPUC-Global.png"
+tabcmd export "BoardReportingFunnel/ABPUC?region=AT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\5b-ABPUC-AT.png"
+tabcmd export "BoardReportingFunnel/ABPUC?region=JP" --png -f "G:\My Drive\Board reporting\Current_Screenshots\6b-ABPUC-JP.png"
+tabcmd export "BoardReportingFunnel/ABPUC?region=AU" --png -f "G:\My Drive\Board reporting\Current_Screenshots\7b-ABPUC-AU.png"
+tabcmd export "BoardReportingFunnel/ABPUC?region=IT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\8b-ABPUC-IT.png"
+
+::Get ABPU Screenshots
+::tabcmd export "BoardReportingFunnel/ABPU?region=DE" --png -f "G:\My Drive\Board reporting\Current_Screenshots\1c-ABPU-DE.png"
+::tabcmd export "BoardReportingFunnel/ABPU?region=CH" --png -f "G:\My Drive\Board reporting\Current_Screenshots\2c-ABPU-CH.png"
+::tabcmd export "BoardReportingFunnel/ABPU?region=NL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\3c-ABPU-NL.png"
+::tabcmd export "BoardReportingFunnel/ABPU?region=ALL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\4c-ABPU-Global.png"
+::tabcmd export "BoardReportingFunnel/ABPU?region=AT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\5c-ABPU-AT.png"
+::tabcmd export "BoardReportingFunnel/ABPU?region=JP" --png -f "G:\My Drive\Board reporting\Current_Screenshots\6c-ABPU-JP.png"
+::tabcmd export "BoardReportingFunnel/ABPU?region=AU" --png -f "G:\My Drive\Board reporting\Current_Screenshots\7c-ABPU-AU.png"
+::tabcmd export "BoardReportingFunnel/ABPU?region=IT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\8c-ABPU-IT.png"
+
+::Get CLV3Y Screenshots
+tabcmd export "BoardReportingFunnel/CLV3Y?region=DE" --png -f "G:\My Drive\Board reporting\Current_Screenshots\1d-CLV3Y-DE.png"
+tabcmd export "BoardReportingFunnel/CLV3Y?region=CH" --png -f "G:\My Drive\Board reporting\Current_Screenshots\2d-CLV3Y-CH.png"
+tabcmd export "BoardReportingFunnel/CLV3Y?region=NL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\3d-CLV3Y-NL.png"
+tabcmd export "BoardReportingFunnel/CLV3Y?region=ALL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\4d-CLV3Y-Global.png"
+tabcmd export "BoardReportingFunnel/CLV3Y?region=AT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\5d-CLV3Y-AT.png"
+tabcmd export "BoardReportingFunnel/CLV3Y?region=JP" --png -f "G:\My Drive\Board reporting\Current_Screenshots\6d-CLV3Y-JP.png"
+tabcmd export "BoardReportingFunnel/CLV3Y?region=AU" --png -f "G:\My Drive\Board reporting\Current_Screenshots\7d-CLV3Y-AU.png"
+tabcmd export "BoardReportingFunnel/CLV3Y?region=IT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\8d-CLV3Y-IT.png"
+
+::Get Retention
+tabcmd export "BoardReportingMonthlyBookings/RetentionCountry?Country=DE" --png -f "G:\My Drive\Board reporting\Current_Screenshots\1e-RET-DE.png"
+tabcmd export "BoardReportingMonthlyBookings/RetentionCountry?Country=CH" --png -f "G:\My Drive\Board reporting\Current_Screenshots\2e-RET-CH.png"
+tabcmd export "BoardReportingMonthlyBookings/RetentionCountry?Country=NL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\3e-RET-NL.png"
+tabcmd export "BoardReportingMonthlyBookings/RetentionGlobal" --png -f "G:\My Drive\Board reporting\Current_Screenshots\4e-RET-Global.png"
+tabcmd export "BoardReportingMonthlyBookings/RetentionCountry?Country=AT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\5e-RET-AT.png"
+tabcmd export "BoardReportingMonthlyBookings/RetentionCountry?Country=JP" --png -f "G:\My Drive\Board reporting\Current_Screenshots\6e-RET-JP.png"
+tabcmd export "BoardReportingMonthlyBookings/RetentionCountry?Country=AU" --png -f "G:\My Drive\Board reporting\Current_Screenshots\7e-RET-AU.png"
+tabcmd export "BoardReportingMonthlyBookings/RetentionCountry?Country=IT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\8e-RET-IT.png"
+
+::Get Monthly Bookings
+tabcmd export "BoardReportingMonthlyBookings/COUNTRY?Country=DE" --png -f "G:\My Drive\Board reporting\Current_Screenshots\1f-BM-DE.png"
+tabcmd export "BoardReportingMonthlyBookings/COUNTRY?Country=CH" --png -f "G:\My Drive\Board reporting\Current_Screenshots\2f-BM-CH.png"
+tabcmd export "BoardReportingMonthlyBookings/COUNTRY?Country=NL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\3f-BM-NL.png"
+tabcmd export "BoardReportingMonthlyBookings/GLOBAL" --png -f "G:\My Drive\Board reporting\Current_Screenshots\4f-BM-Global.png"
+tabcmd export "BoardReportingMonthlyBookings/COUNTRY?Country=AT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\5f-BM-AT.png"
+tabcmd export "BoardReportingMonthlyBookings/COUNTRY?Country=JP" --png -f "G:\My Drive\Board reporting\Current_Screenshots\6f-BM-JP.png"
+tabcmd export "BoardReportingMonthlyBookings/COUNTRY?Country=AU" --png -f "G:\My Drive\Board reporting\Current_Screenshots\7f-BM-AU.png"
+tabcmd export "BoardReportingMonthlyBookings/COUNTRY?Country=IT" --png -f "G:\My Drive\Board reporting\Current_Screenshots\8f-BM-IT.png"
+
+::Get Active Subscriptions
+tabcmd export "ShareActiveSubsforBoardReport/ForBoardreportDE?:iid=2" --png -f "G:\My Drive\Board reporting\Current_Screenshots\1g-Subs-DE.png"
+tabcmd export "ShareActiveSubsforBoardReport/ForBoardreportCH?:iid=2" --png -f "G:\My Drive\Board reporting\Current_Screenshots\2g-Subs-CH.png"
+tabcmd export "ShareActiveSubsforBoardReport/ForBoardreportNL?:iid=2" --png -f "G:\My Drive\Board reporting\Current_Screenshots\3g-Subs-NL.png"
+tabcmd export "ShareActiveSubsforBoardReport/ForBoardreportALL?:iid=2" --png -f "G:\My Drive\Board reporting\Current_Screenshots\4g-Subs-ALL.png"
+tabcmd export "ShareActiveSubsforBoardReport/ForBoardreportAT?:iid=2" --png -f "G:\My Drive\Board reporting\Current_Screenshots\5g-Subs-AT.png"
+tabcmd export "ShareActiveSubsforBoardReport/ForBoardreportJP?:iid=2" --png -f "G:\My Drive\Board reporting\Current_Screenshots\6g-Subs-JP.png"
+tabcmd export "ShareActiveSubsforBoardReport/ForBoardreportAU?:iid=2" --png -f "G:\My Drive\Board reporting\Current_Screenshots\7g-Subs-AU.png"
+tabcmd export "ShareActiveSubsforBoardReport/ForBoardreportIT?:iid=2" --png -f "G:\My Drive\Board reporting\Current_Screenshots\8g-Subs-IT.png"
